@@ -6,7 +6,7 @@ import time
 
 class BreakOut(Exception):pass
 
-"""start = time.time()
+start = time.time()
 
 try:
     for a in xrange(1,1000):
@@ -45,18 +45,18 @@ except BreakOut:
     pass
 
 elapsed2 = time.time()
-print "Sol 2 takes: %r" % (elapsed2 - start2)"""
+print "Sol 2 takes: %r" % (elapsed2 - start2)
 # Answer found!
 # Product= 31875000
 # x: 200, y: 375, z: 425 
 # Sol 2 takes: 23.333422899246216
+
 
 # Euclid's formula
 # M&N
 # A = M**2 - N**2
 # B = (M*N)*2
 # C = M**2 + N**2
-
 start3 = time.time()
 
 m = 0
