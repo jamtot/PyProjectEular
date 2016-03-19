@@ -40,6 +40,4 @@ if __name__ == "__main__":
     print bin_coef(2,2)#6
     print bin_coef(20,20)#137846528820
     print bin_coef(100,100)#90548514656103281165404177077484163874504589675413336841320
-    
-
-    
+    print bin_coef(499,499)# anything higher exceeds recursion depth (999)
