@@ -35,9 +35,24 @@ def bottoms_up(nooms):
     # return the top value, which has the greatest path value
     return nooms[0][0]
 
+def bot_up(input):
+    nooms = []
+    # split input into a list of lists
+    for line in input.splitlines():
+        nooms += [[int(x) for x in line.split()]]
+    # do lines from bottom, starting second from bottom
+    for i in xrange(len(nooms)-2,-1,-1):
+        # go through each element, and add the greater underneath
+        for j in xrange(len(nooms[i])):
+            nooms[i][j]+=max(nooms[i+1][j],nooms[i+1][j+1])
+    # return the top value, which has the greatest path value
+    print nooms[0][0]
+
 nums=get_noomers(input1)
 print bottoms_up(nums)
 
 nums2=get_noomers(input2)#23
 print bottoms_up(nums2)#1074
+
+bot_up(input2)
 
