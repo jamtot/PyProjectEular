@@ -12,4 +12,4 @@ print fac(10)
 print fac(100)
 
 print sum_digits(fac(10))
-print sum_digits(fac(100))
+print sum_digits(fac(100))#648
