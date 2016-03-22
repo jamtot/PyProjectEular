@@ -56,6 +56,7 @@ def lexic(nums, nth):
     return nums
 
 def permutations_possible(nums,printit=False):
+    # there are 10 digits, so 10! different combinations of answers
     current=1
     last=[1]
     while True:
