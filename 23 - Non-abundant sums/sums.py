@@ -14,6 +14,7 @@ def get_nums(limit, abunds):
         for y in abunds:
             if x+y>limit-1:
                 break
+            #element [0] = 0, [1] = 1..., [limit-1] = limit-1
             nums[x+y]=0
     return nums
 
