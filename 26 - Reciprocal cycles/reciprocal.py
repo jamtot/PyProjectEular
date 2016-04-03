@@ -70,7 +70,7 @@ def cycle_length(d):
     remainder_list = []
     list_len = 0
     remainder = 1
-    # just used to pointlessly get the cyclic numbers
+    # just used to get the cyclic numbers (not needed for problem)
     c=0
     r2=1
     c=r2 / d
