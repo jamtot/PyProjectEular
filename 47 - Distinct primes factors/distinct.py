@@ -41,7 +41,7 @@ def primecompgen(composites = True):
             if composites:             
                 yield num, primes
            
-def factors(n, primes):
+def factor(n, primes):
     factors = []
     if n < 1:
         factors
@@ -67,7 +67,7 @@ def findconsec(n):
     while consecutive < n:
         comp, primes = pcg.next()
         if comp!=prevcomp+1: consecutive = 0 
-        if len(factors(comp, primes))==n: 
+        if len(factor(comp, primes))==n: 
             consecutive+=1
         else: consecutive = 0
         prevcomp = comp
