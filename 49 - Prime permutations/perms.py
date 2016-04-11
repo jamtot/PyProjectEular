@@ -53,4 +53,5 @@ def concat(vals):
 if __name__ == "__main__":
     primes = primelist()
     matches = findperms(primes)
-    print concat(checkmatches(matches))
+    print concat(checkmatches(matches)) # 296962999629, 148748178147
+
