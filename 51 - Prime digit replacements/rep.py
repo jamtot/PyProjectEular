@@ -10,6 +10,7 @@ def primesieve(ceiling, floor=0):
                 is_prime[j] = False
     return [i for i in xrange(2,ceiling) if is_prime[i] == True and i >= floor]
 
+
 def findfam(primes, matches=8, samesies=3):
     currprime=''
     numbers=''.join(map(str, range(10)))
