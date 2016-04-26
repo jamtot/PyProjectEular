@@ -9,9 +9,7 @@ def miller_rabin(n):
     True
 
     Algorithm & Python source:
-    http://en.literateprograms.org/Miller-Rabin_primality_test_(Python)
-    # above site now defunct
-    https://en.wikipedia.org/wiki/Miller%E2%80%93Rabin_primality_test
+    http://en.literateprograms.org/Miller-Rabin_primality_test_(Python) <-- now defunct
     """
     d = n - 1
     s = 0
@@ -36,10 +34,11 @@ def miller_rabin_pass(a, s, d, n):
         a_to_power = (a_to_power * a_to_power) % n
     return a_to_power == n - 1
 
+# got from http://blog.dreamshire.com/common-functions-routines-project-euler/#miller_rabin
 #------------------------------------------------------------------------------------------
 
-# tried generating primes, took way too long
-# tried a primesieve, couldn't generate high enough
+# tried generating primes - took way too long
+# tried a primesieve - couldn't generate high enough without crashing my computer
 # had to find something to test if a number was prime, found 
 # the miller rabin function online
 
