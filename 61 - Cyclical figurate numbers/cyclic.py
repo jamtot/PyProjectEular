@@ -25,6 +25,8 @@ def permcheck(i, perm, polys, cyclist=[]):
         found = (str(cyclist[-1])[-2:] == str(cyclist[0])[:2])
         if found:
             print sum(cyclist), cyclist
+            # it just won't return the value for me, so I just print it
+            # meaning all the different orders of the 6 numbers are printed
             return sum(cyclist)
     elif len(cyclist) < 1:
         for pnum in polys[perm[i]]:
